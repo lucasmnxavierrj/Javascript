@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;800&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    line-height: 1.5;
+}
+body{
+    background-color: #F1F5F8;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100vh;    
+}
+.titulo{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 200;
+    font-size: 2.0em;
+    text-transform: uppercase;
+    letter-spacing: 0.3em;
+}
+.separador{
+    background-color: rgb(255, 165, 0);
+    width: 10%;
+    height: 5px;
+    margin-top: -25px;
+}
+.card-testemunho{
+    background-color: #FFFFFF;
+    width: 50%;
+    height: 60%;
+    text-align: center;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0,0.2);
+    border-radius: 25px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+}
+.foto-testemunho{
+    width: 120px;
+    height: 120px;
+    border-radius: 100%;
+    border: solid 4px orange;
+}
+.nome-testemunho{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    letter-spacing: 0.3em;    
+}
+.ocupacao-testemunho{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.3em;      
+}
+.texto-testemunho{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    text-align: center;  
+    font-size: 0.8em;  
+    padding-left: 50px;
+    padding-right: 50px;
+    font-style: italic;
+}
+.container-sliders span{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 800;   
+    font-size: 1.5em;   
+    color: orange;
+}
+.container-sliders span:hover{
+    color: rgba(255, 165, 0,0.8); 
+    cursor: pointer;
+}
+.btn-random{
+    padding: 10px 30px;
+    background-color: orange;
+    color: #1e1e1e;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 800;
+    border: 0;
+    cursor: pointer;
+    border-radius: 10px;
+    text-transform: uppercase;
+}
+.btn-random:hover{
+    background-color: rgba(255, 165, 0,0.8);
+
+}
