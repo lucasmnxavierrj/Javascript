@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+@keyframes zoomInOut{
+    0%{
+        width: 40px
+    }
+    50%{
+        width: 50px;
+    }
+    100%{
+        width: 40px;
+    }
+}
+@keyframes rotate {
+    0%{
+        transform: rotate(0deg);
+    }
+    25%{
+        transform: rotate(90deg);
+    }
+    50%{
+        transform: rotate(180deg);
+    }
+    75%{
+        transform: rotate(270deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+@keyframes slideInRight{
+    0%{
+        margin-left: -1000px;
+    }
+    100%{
+        margin-left: 0px;
+    }
+}
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: #F1F5F8;
+    height: 100vh;
+}
+.hamburger-menu img{
+    padding: 15px;
+    margin: 25px;
+    top: 0;
+    right: 0;
+    position: fixed;
+    animation: zoomInOut 2s ease-in-out infinite;
+    cursor: pointer;
+    transition: background-color ease-in-out 0.5s;
+}
+.hamburger-menu img:hover{
+    background-color: rgba(255, 136, 0, 0.15);
+    border-radius: 15px;
+}
+.hamburger-menu img:not(:hover){
+    background-color: rgba(0, 0, 0,0.0);
+    border-radius: 15px;
+}
+header{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 25%;
+    min-height: 100%;
+    box-shadow: 5px 0px 20px rgba(0, 0, 0,0.1);
+}
+.hide{
+    display: none;
+}
+.container-top-sidebar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    font-family: 'Bebas Neue', sans-serif;
+    margin: 0px 5px;
+}
+.logo{
+    font-size: 3.0em;
+    color: #1e1e1e;
+}
+#fechar-sidebar{
+    font-size: 1.8em;
+    color: red;
+    cursor: pointer;
+    font-weight: 600;
+    font-family:  sans-serif;
+}
+#fechar-sidebar:hover{
+    animation: rotate 0.3s ease-in-out ;
+    color: rgba(255, 0, 0,0.5);
+}
+nav{
+    margin-top: -25px;
+    width: 100%;
+}
+.nav-link{
+    padding: 10px 0px;
+    font-size: 1.5em;
+    font-family: 'Quicksand', sans-serif;
+    text-align: center;
+    width: 100%;
+    transition: background-color 0.5s ease-in-out;
+}
+.nav-link:hover{
+    background-color: rgba(30, 30, 30,0.05);
+    cursor: pointer
+}
+.nav-link:hover a{
+    color: orange;
+    transition: color 0.3s ease-in-out;
+}
+.nav-link a{
+    text-decoration: none;
+    color: #1e1e1e;
+}
+.social-media{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.social-icon{
+    padding: 0px 10px;
+}

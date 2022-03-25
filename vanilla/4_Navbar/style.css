@@ -97,7 +97,6 @@ a{
         justify-content: center;
         align-items: center;
         box-shadow: var(--light-shadow);
-        transition: visibility 2.3s ease-out;
     }
     .mobile-menu-item{
         background-color: white;
