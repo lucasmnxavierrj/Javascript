@@ -26,5 +26,10 @@ A simple testimonial section, where the user can loop through the items in order
  
 A responsive navbar.
 
-*In this project I learned that I couldn't just show the mobile-nav by overlaping the CSS style 'display:none', I had to create a separate class with the display style and remove/add it accordingly the button press.
-This project was also good to remember some CSS animation elements, like transform, transition, etc.*
+*In this project I implemented a arrow function on the window event 'resize'. Learned about the CSS Specifity, with the overlap of the 'display' style via javascript and It also made me remember some CSS animation elements, like transform, transition, etc.*
+
+ - **5_Sidebar**
+ 
+A dinamic sidebar.
+
+*In this project I made a sidebar the would slide-in based on the click event of the hamburger icon. I used CSS Keyframes to make the animations of the hamburger icon and the slide-in effect of the sidebar. Used javascript to manipulate the css styles.*
