@@ -33,3 +33,9 @@ A responsive navbar.
 A dinamic sidebar.
 
 *In this project I made a sidebar the would slide-in based on the click event of the hamburger icon. I used CSS Keyframes to make the animations of the hamburger icon and the slide-in effect of the sidebar. Used javascript to manipulate the css styles.*
+
+ - **6_Modal**
+ 
+A simple modal box.
+
+*In this project I made a simple modal box. The animations for the modal's fade in and for the close button were made in css with keyframes and I used javascript to manipulate the css attributes.*
