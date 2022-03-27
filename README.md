@@ -39,3 +39,9 @@ A dinamic sidebar.
 A simple modal box.
 
 *In this project I made a simple modal box. The animations for the modal's fade in and for the close button were made in css with keyframes and I used javascript to manipulate the css attributes.*
+
+ - **7_Q&A**
+ 
+A responsive and interative Q&A page.
+
+*In this project I used nested arrow functions and the forEach method to manipulate the elements corresponding each button's card.*
