@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1.5;
+}
+@keyframes rotate{
+    0%{   
+        transform: rotate(0deg);
+        transform-origin: center;
+    }
+    100%{
+        transform: rotate(90deg);
+    }
+}
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+body{
+    background-color: #F1F5F8;
+}
+.titulo{
+    margin-bottom: 50px;
+    margin-top: 50px;
+    flex-wrap: wrap;
+    font-family: 'Kaushan Script', 'Lucida Sans', sans-serif;
+    font-size: 2.0em;
+    color: orangered;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.card{
+    background-color: white;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.1);
+    padding: 25px;
+    width: 50%;
+    border-radius: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.titulo-card{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 200;
+    letter-spacing: 5px;
+    font-size: 0.8em;
+    text-align: left;
+    text-transform: uppercase;
+}
+.texto-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    opacity: 0;
+}
+.hide{
+    display: none;
+}
+.expandir-card{
+    font-size: 1.8em;
+    color: orangered;
+    font-weight: bold;
+    cursor: pointer;
+    transform-origin: center;
+}
+.expandir-card:hover{
+    color: rgba(255, 69, 0,0.6);
+    animation: rotate 0.5s ease-in-out 1;
+}
+.separador-card{
+    width: 80%;
+    background-color: rgba(0, 0, 0,0.3);
+    height: 1px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+@media (max-width: 600px) {
+    .card{
+        margin: 5px;
+        width: 80%;
+    }
+}
