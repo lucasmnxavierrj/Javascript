@@ -49,7 +49,7 @@ body{
 }
 .titulo{
     font-weight: 200;
-    font-size: 3em;
+    font-size: 3rem;
 }
 #btn-abrir-modal{
     padding: 15px 25px;

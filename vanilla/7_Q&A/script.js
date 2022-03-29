@@ -3,8 +3,8 @@ let txtCard = document.querySelector('.texto-card')
 
 card.forEach(card =>{
     //console.log(botao.parentElement.parentElement.childNodes[3].classList.contains('hide')) 
-    let botao = card.querySelector('.expandir-card')
-    let conteudoCard = card.querySelector('.texto-card')
+    const botao = card.querySelector('.expandir-card')
+    const conteudoCard = card.querySelector('.texto-card')
 
     botao.addEventListener('click',()=>{
         if(conteudoCard.classList.contains('hide')){

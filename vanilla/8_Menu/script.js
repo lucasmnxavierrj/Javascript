@@ -38,6 +38,13 @@ let conteudo = [
 ]
 let botoes = document.querySelectorAll('.btn-menu')
 
+const atualizaCoresBotoes = ()=>{
+    botoes.forEach(botao=>{
+        botao.style.backgroundColor = 'orangered'
+        console.log(botao)
+    })
+}
+
 //no carregamento da pagina
 window.addEventListener('DOMContentLoaded',exibirCards(conteudo))
 
@@ -46,12 +53,6 @@ botoes.forEach(botao =>{
     
     botao.addEventListener('click', ()=>{
         //console.log(botao.value)
-        const atualizaCoresBotoes = ()=>{
-            botoes.forEach(botao=>{
-                botao.style.backgroundColor = 'orangered'
-                console.log(botao)
-            })
-        }
         atualizaCoresBotoes()
         if(botao.value != 'todos'){
             let conteudoFiltrado = conteudo.filter(item=>item.categoria === botao.value)
@@ -63,6 +64,7 @@ botoes.forEach(botao =>{
         }
     })
 })
+
 
 //exibe cards baseado no objeto fornecido no parametro
 function exibirCards(items){
