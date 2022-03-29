@@ -45,3 +45,9 @@ A simple modal box.
 A responsive and interative Q&A page.
 
 *In this project I used nested arrow functions and the forEach method to manipulate the elements corresponding each button's card.*
+
+ - **8_Menu**
+ 
+A interative menu page.
+
+*In this project I fed the data via Javascrit through an array of objects. Used the DOMContentLoaded event to display all content on page load, and then used the filter method to dynamically filter the array based on the button pressed. To display the array on the page I used the map method to concatenate the html blocks.
