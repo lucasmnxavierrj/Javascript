@@ -51,3 +51,9 @@ A responsive and interative Q&A page.
 A interative menu page.
 
 *In this project I fed the data via Javascrit through an array of objects. Used the DOMContentLoaded event to display all content on page load, and then used the filter method to dynamically filter the array based on the button pressed. To display the array on the page I used the map method to concatenate the html blocks.
+
+ - **9_Submenu 2.0**
+ 
+A fully responsive and interactive sidebar.
+
+*I made this project inspired by the AdminLTE sidebar. Used Javascript to hide/unhide the subitems and to collapse/uncollapse the sidebar when the hamburger icon is clicked or when the sidebar is hovered. Used webkit-scrollbar to customize the nav-items container's scrollbar, transitions to soften up the elements's changes and flexbox to position then accordingly.
