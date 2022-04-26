@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;800&display=swap');
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: var(--fonte_padrao);
+}
+
+:root {
+	--bg-color: #F4F7FA;
+	--fonte_padrao: 'Open Sans', sans-serif;
+}
+
+body {
+	background-color: var(--bg-color);
+	width: 100%;
+	height: 100vh;
+}
+
+.container {
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	min-height: 100%;
+}
+
+
+/*===== SIDEBAR CONFIGS =====*/
+
+.sidebar {
+	background-color: #0B263F;
+	width: 280px;
+	position: fixed;
+	height: 100%;
+	color: white;
+	box-shadow: 5px 0px 10px rgba(0, 0, 0, 0.2);
+	transition: all .5s ease-in-out;
+}
+
+.sidebar-hover {
+	background-color: #0B263F;
+	width: 280px;
+	position: fixed;
+	height: 100%;
+	color: white;
+	box-shadow: 5px 0px 10px rgba(0, 0, 0, 0.2);
+	transition: all .5s ease-in-out;
+}
+
+.sidebar-colapsed {
+	background-color: #0B263F;
+	width: 80px;
+	position: fixed;
+	height: 100%;
+	color: white;
+	box-shadow: 5px 0px 10px rgba(0, 0, 0, 0.2);
+	transition: all .5s ease-in-out;
+}
+
+.hamburger-icon {
+	position: fixed;
+	margin-left: 300px;
+	margin-top: 20px;
+	font-size: 1.5em;
+	cursor: pointer;
+	color: #18191A;
+	transition: all .5s ease-in-out;
+}
+
+.container-sidebar {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	flex-wrap: nowrap;
+	width: 100%;
+	height: 100%;
+}
+
+.titulo-nav {
+	height: 100px;
+	min-height: 100px;
+	text-align: center;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-evenly;
+	font-size: 1.5em;
+	margin: 0px 30px;
+}
+.logo-icon img{
+	width: 50px;
+}
+.container-navbar {
+	overflow-y: scroll;
+	overflow-x: hidden;
+	height: 100vh;
+}
+
+.navbar {
+	margin: 20px 10px;
+    width: 95%;
+}
+
+.sidebar-colapsed + .conteudo{
+	margin-left: 100px;
+	margin-top: 25px;
+	margin-bottom: 25px;
+	margin-right: 25px;
+}
+.sidebar-colapsed .info_usuario {
+	display: none;
+	transition: all 1s ease-in-out;
+}
+
+.sidebar-colapsed .titulo-nav p{
+	display: none;
+}
+
+.sidebar-colapsed .hamburger-icon {
+	margin-left: 100px;
+	transition: all .5s ease-in-out;
+}
+
+.container-navbar::-webkit-scrollbar {
+	border-radius: 10px;
+	background-color: #183c61;
+	width: 8px;
+}
+
+.container-navbar::-webkit-scrollbar-thumb {
+	background-color: #234a72;
+}
+
+.nav-link {
+	width: 100%;
+	padding: 15px 15px;
+	cursor: pointer;
+}
+
+
+.nav-link a {
+	text-decoration: none;
+	color: white;
+    display: flex;
+}
+.nav-link a span{
+	width: 100%;
+}
+.nav-subitem {
+    display: none;
+}
+.nav-item,
+.nav-subitem {
+	list-style: none;
+	font-size: 0.9em;
+	width: 100%;
+	transition: all .5s ease-in-out;
+}
+
+.nav-item i {
+	font-size: 1.3em;
+}
+
+.nav-item-colapsed {
+	transition: all .5s ease-in-out;
+    margin-left: -20px;
+}
+
+.nav-item-colapsed i {
+	font-size: 1.5em;
+	margin: 0px;
+	padding: 0px;
+	text-align: center;
+	width: 100%;
+}
+
+.nav-item-colapsed span {
+	display: none;
+}
+
+.nav-item-colapsed .icon-submenu {
+	display: none;
+}
+
+.nav-item-colapsed .nav-subitem li {
+	padding: 15px 0px;
+}
+
+.icon-submenu {
+	color: rgba(255, 255, 255, 0.5);
+	transition: all 0.3s ease-in-out;
+    text-align: right;
+    width: 100%;
+}
+
+
+.nav-subitem li {
+	padding-left: 40px;
+}
+
+.icon {
+	margin-right: 15px;
+}
+
+.nav-link:hover {
+	background-color: rgba(19, 55, 88, 0.8);
+	border-radius: 15px;
+}
+
+.sidebar-colapsed .usuario_logado {
+	padding: 0;
+	justify-content: center;
+}
+
+.sidebar-colapsed .foto_usuario img {
+	width: 50px;
+}
+
+.usuario_logado {
+	border-top: 1px solid rgba(255, 255, 255, 0.1);
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	min-height: 100px;
+	padding: 0px 30px;
+}
+
+.foto_usuario img {
+	max-width: 60px;
+	border-radius: 20px;
+}
+
+.nome_usuario {
+	font-size: 1.0em;
+	transition: all 1s ease-in-out;
+}
+
+.cargo_usuario {
+	font-style: italic;
+	font-size: 0.8em;
+}
+
+
+/*===== CONTEUDO =====*/
+
+.conteudo {
+	right: 0;
+	width: 100%;
+	height: 1000px;
+	text-align: justify;
+	margin-left: 300px;
+	margin-right: 25px;
+	margin-top: 25px;
+	margin-bottom: 25px;
+	transition: all .5s ease-in-out;
+}
+
+.conteudo p{
+	line-height: 1.5;
+	margin-top: 25px;
+}
